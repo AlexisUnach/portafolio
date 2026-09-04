@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexis Galvez — Portafolio</title>
+<meta name="description" content="Portafolio de Alexis Andrey Galvez Roblero, estudiante de Ingeniería en Desarrollo y Tecnologías de Software.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="spotlight" aria-hidden="true"></div>
+<div class="grid-field" aria-hidden="true"></div>
+
+<!-- ============ TOP NAV ============ -->
+<header class="topnav">
+  <a href="#top" class="mark">AG</a>
+  <nav class="nav" aria-label="Secciones">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a href="https://github.com/AlexisUnach" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub de Alexis">
+    <i class="devicon-github-original"></i>
+  </a>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <p class="hero-kicker">Portafolio</p>
+    <h1 class="hero-title">Alexis Galvez</h1>
+    <p class="hero-type">
+      Trabajo en <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span>
+    </p>
+    <p class="hero-text">
+      Estudiante de 9° semestre en la UNACH con experiencia práctica en desarrollo web,
+      soporte de infraestructura de TI y colaboración en proyectos multidisciplinarios.
+      Me interesa entender cómo funciona un sistema de punta a punta: desde el cableado
+      hasta la base de datos.
+    </p>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="block" id="sobre-mi">
+    <h2 class="block-title">Sobre mí</h2>
+    <div class="block-body">
+      <p class="block-text">
+        Combino formación académica con experiencia de campo: prácticas profesionales en
+        desarrollo web y soporte técnico, además de servicio social dando mantenimiento
+        a infraestructura y colaborando en un sistema interno para consulta de registros
+        de personal. Trabajo bien en equipo y me adapto rápido a herramientas nuevas.
+      </p>
+      <p class="block-text">
+        Inglés nivel B1 (intermedio), según el Marco Común Europeo de Referencia.
+        Tuxtla Gutiérrez, Chiapas.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="block" id="experiencia">
+    <h2 class="block-title">Experiencia</h2>
+    <div class="block-body">
+      <div class="timeline">
+        <article class="entry">
+          <span class="entry-dot" aria-hidden="true"></span>
+          <div class="entry-body">
+            <h3 class="entry-title">Práctica profesional — Desarrollo web</h3>
+            <p class="entry-org">JFX Studios</p>
+            <p class="entry-desc">
+              Desarrollo de páginas web para distintas empresas, incluyendo funcionalidades
+              de back end simple.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <span class="entry-dot" aria-hidden="true"></span>
+          <div class="entry-body">
+            <h3 class="entry-title">Práctica profesional — Soporte técnico</h3>
+            <p class="entry-org">Museo de la Niñez</p>
+            <p class="entry-desc">
+              Mantenimiento preventivo y correctivo de equipos de cómputo.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <span class="entry-dot" aria-hidden="true"></span>
+          <div class="entry-body">
+            <h3 class="entry-title">Servicio social — Soporte técnico y desarrollo</h3>
+            <p class="entry-org">Secretaría General de Gobierno y Mediación del Estado de Chiapas</p>
+            <p class="entry-desc">
+              Mantenimiento de equipos de cómputo y cableado estructurado. Colaboración en
+              un sistema con Laravel y SQL Server para que los empleados consultaran registros
+              de entrada, salida y permisos.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS (CARRUSEL) -->
+  <section class="block" id="proyectos">
+    <h2 class="block-title">Proyectos</h2>
+    <div class="block-body">
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+
+          <article class="project">
+            <p class="project-sub">Expediente clínico electrónico</p>
+            <h3 class="project-title">MedSys</h3>
+            <p class="project-desc">
+              Sistema para gestionar historiales médicos de pacientes de forma digital,
+              desplegado en Azure. Trabajo colaborativo en equipo académico.
+            </p>
+            <ul class="project-stack">
+              <li><i class="devicon-python-plain colored"></i> Python</li>
+              <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+              <li><i class="devicon-react-original colored"></i> React</li>
+              <li><i class="devicon-vitejs-plain colored"></i> Vite</li>
+              <li><i class="devicon-azure-plain colored"></i> Azure</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <p class="project-sub">Red social de lugares por visitar</p>
+            <h3 class="project-title">Social Spot</h3>
+            <p class="project-desc">
+              Aplicación web para marcar y compartir sitios de interés dentro de una ciudad,
+              pensada como una guía colaborativa entre usuarios.
+            </p>
+            <ul class="project-stack">
+              <li><i class="devicon-html5-plain colored"></i> HTML</li>
+              <li><i class="devicon-css3-plain colored"></i> CSS</li>
+              <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+              <li><i class="devicon-couchdb-plain colored"></i> CouchDB</li>
+              <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <p class="project-sub">Gestión de renta de vehículos</p>
+            <h3 class="project-title">Sistema de alquiler de autos</h3>
+            <p class="project-desc">
+              Plataforma para administrar la disponibilidad, renta y control de vehículos,
+              desarrollada en equipo como proyecto académico.
+            </p>
+            <ul class="project-stack">
+              <li><i class="devicon-csharp-plain colored"></i> C#</li>
+              <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="carousel-controls">
+          <button type="button" class="carousel-btn" id="prevBtn" aria-label="Proyecto anterior">‹</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button type="button" class="carousel-btn" id="nextBtn" aria-label="Proyecto siguiente">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="block" id="habilidades">
+    <h2 class="block-title">Habilidades</h2>
+    <div class="block-body">
+      <div class="skills-group">
+        <p class="skills-label">Lenguajes</p>
+        <ul class="skills-grid">
+          <li><i class="devicon-python-plain colored"></i><span>Python</span></li>
+          <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+          <li><i class="devicon-html5-plain colored"></i><span>HTML</span></li>
+          <li><i class="devicon-css3-plain colored"></i><span>CSS</span></li>
+          <li><i class="devicon-laravel-plain colored"></i><span>Laravel</span></li>
+          <li><i class="devicon-csharp-plain colored"></i><span>C#</span></li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <p class="skills-label">Bases de datos</p>
+        <ul class="skills-grid">
+          <li><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></li>
+          <li><i class="devicon-couchdb-plain colored"></i><span>CouchDB</span></li>
+          <li><i class="devicon-microsoftsqlserver-plain colored"></i><span>SQL Server</span></li>
+          <li><i class="devicon-mariadb-original colored"></i><span>MariaDB</span></li>
+          <li><i class="devicon-mysql-original colored"></i><span>MySQL</span></li>
+          <li><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <p class="skills-label">Herramientas</p>
+        <ul class="skills-grid">
+          <li><i class="devicon-git-plain colored"></i><span>Git</span></li>
+          <li><i class="devicon-github-original"></i><span>GitHub</span></li>
+          <li><i class="devicon-visualstudio-plain colored"></i><span>Visual Studio</span></li>
+          <li><i class="devicon-vscode-plain colored"></i><span>VS Code</span></li>
+          <li><i class="devicon-azure-plain colored"></i><span>Azure</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="block block-contact" id="contacto">
+    <h2 class="block-title">Contacto</h2>
+    <div class="block-body">
+      <p class="block-text">
+        ¿Tienes un proyecto o una práctica en mente? Con gusto lo platicamos.
+      </p>
+      <div class="contact-list">
+        <a href="mailto:alexis.galvez89@unach.mx">alexis.galvez89@unach.mx</a>
+        <a href="tel:+529631915969">963 191 5969</a>
+        <a href="https://github.com/AlexisUnach" target="_blank" rel="noopener">github.com/AlexisUnach</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Alexis Andrey Galvez Roblero — Tuxtla Gutiérrez, Chiapas</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
